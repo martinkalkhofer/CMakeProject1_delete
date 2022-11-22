@@ -10,4 +10,4 @@ if (CMAKE_VERSION VERSION_GREATER 3.12)
 endif()
 
 # TODO: Add tests and install targets if needed.
-add_custom_target(kalki COMMAND "ls" "-al")
+add_custom_target(testTarget COMMAND "ls" "-al")
