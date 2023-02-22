@@ -3,7 +3,7 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-project ("CMakeProject1_delete")
+project ("CMakeProject1")
 
 # Include sub-projects.
-add_subdirectory ("CMakeProject1_delete")
+add_subdirectory ("CMakeProject1")
