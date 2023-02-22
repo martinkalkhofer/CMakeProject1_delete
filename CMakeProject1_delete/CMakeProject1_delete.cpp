@@ -2,11 +2,14 @@
 //
 
 #include "CMakeProject1_delete.h"
+#include "Library.h"
+
 
 using namespace std;
 
+
 int main()
 {
-	cout << "Hello CMake." << endl;
+	testFunc();
 	return 0;
 }

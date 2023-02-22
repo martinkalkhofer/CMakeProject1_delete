@@ -2,8 +2,16 @@
 # project specific logic here.
 #
 
+
 # Add source to this project's executable.
+add_library(libtest STATIC "Library.cpp")
 add_executable (CMakeProject1_delete "CMakeProject1_delete.cpp" "CMakeProject1_delete.h")
+target_link_libraries(CMakeProject1_delete 
+					PRIVATE
+						libtest
+)
+
+
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET CMakeProject1_delete PROPERTY CXX_STANDARD 20)
